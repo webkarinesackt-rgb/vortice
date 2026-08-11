@@ -416,6 +416,14 @@ h1,h2,h3,p{ margin: 0; }
 }
 .section-watermark--br{ right: -10%; bottom: -18%; }
 .section-watermark--tl{ left: -12%; top: -16%; transform: rotate(15deg); }
+
+#publico{
+  background:
+    linear-gradient(180deg, var(--void) 0%, rgba(5,9,15,.93) 40%, var(--void) 100%),
+    url("../assets/img/navio-transpetro.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
 .section--panel{
   background: linear-gradient(90deg, var(--navy-900) 0%, var(--navy-800) 48%, var(--navy-900) 100%);
 }
@@ -790,6 +798,12 @@ h1,h2,h3,p{ margin: 0; }
   background: radial-gradient(120% 140% at 20% 0%, rgba(200,164,69,.14), transparent 60%), var(--navy-800);
   border: 1px solid var(--gold-700);
   text-align: center;
+}
+.price-reveal__mark{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 14px;
+  display: block;
 }
 .price-reveal__label{
   font-size: .78rem;
