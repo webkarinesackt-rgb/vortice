@@ -6,13 +6,6 @@
 
   document.getElementById("footer-year").textContent = new Date().getFullYear();
 
-  var contatoLink = document.querySelector("[data-cta-contato]");
-  if (contatoLink) {
-    contatoLink.addEventListener("click", function (e) {
-      e.preventDefault();
-    });
-  }
-
   /* ---------------- media skeleton / lazy load ---------------- */
   document.querySelectorAll(".media").forEach(function (wrap) {
     var img = wrap.querySelector("img");
