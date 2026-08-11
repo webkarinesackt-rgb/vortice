@@ -468,7 +468,7 @@ h1,h2,h3,p{ margin: 0; }
 .ledger-card--transpetro{
   background:
     linear-gradient(165deg, rgba(5,9,15,.92) 0%, rgba(8,21,39,.86) 42%, rgba(5,9,15,.95) 100%),
-    url("../assets/img/navio-transpetro.jpg");
+    url("../assets/img/duto-transpetro.jpg");
   background-size: cover;
   background-position: center;
 }
