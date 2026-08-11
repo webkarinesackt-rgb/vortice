@@ -459,25 +459,28 @@ h1,h2,h3,p{ margin: 0; }
 }
 .ledger-card--transpetro{
   background:
-    radial-gradient(120% 100% at 100% 100%, rgba(200,164,69,.1), transparent 60%),
-    linear-gradient(165deg, var(--navy-700) 0%, var(--navy-900) 100%);
+    linear-gradient(165deg, rgba(5,9,15,.92) 0%, rgba(8,21,39,.86) 42%, rgba(5,9,15,.95) 100%),
+    url("../assets/img/navio-transpetro.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .ledger-card--petrobras{
   background:
-    radial-gradient(120% 100% at 100% 100%, rgba(114,210,85,.1), transparent 60%),
-    linear-gradient(165deg, var(--navy-700) 0%, var(--navy-900) 100%);
+    linear-gradient(165deg, rgba(5,9,15,.92) 0%, rgba(8,21,39,.86) 42%, rgba(5,9,15,.95) 100%),
+    url("../assets/img/rig-petrobras.jpg");
+  background-size: cover;
+  background-position: center;
   border-bottom: 2px solid rgba(114,210,85,.35);
 }
-.ledger-card__motif{
+.ledger-card__badge{
   position: absolute;
-  right: -6%;
-  bottom: -10%;
-  width: 78%;
-  height: auto;
-  opacity: .16;
+  right: 16px;
+  bottom: 14px;
+  width: 34px;
+  height: 34px;
+  opacity: .55;
   pointer-events: none;
 }
-.ledger-card--petrobras .ledger-card__motif circle:last-of-type{ fill: #72D255; }
 .ledger-card__header{
   display: flex;
   align-items: baseline;
