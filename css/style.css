@@ -419,10 +419,10 @@ h1,h2,h3,p{ margin: 0; }
 
 #publico{
   background:
-    linear-gradient(180deg, var(--void) 0%, rgba(5,9,15,.93) 40%, var(--void) 100%),
-    url("../assets/img/navio-transpetro.jpg");
+    linear-gradient(180deg, var(--void) 0%, rgba(5,9,15,.55) 30%, rgba(5,9,15,.4) 60%, var(--void) 100%),
+    url("../assets/img/fundo-dobra02.jpg");
   background-size: cover;
-  background-position: center 30%;
+  background-position: top center;
 }
 .section--panel{
   background: linear-gradient(90deg, var(--navy-900) 0%, var(--navy-800) 48%, var(--navy-900) 100%);
