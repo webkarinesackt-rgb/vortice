@@ -136,8 +136,9 @@ h1,h2,h3,p{ margin: 0; }
   color: var(--ink-100);
   margin-bottom: 22px;
   text-align: center;
-  max-width: 30ch;
+  max-width: 36ch;
   margin-inline: auto;
+  text-wrap: balance;
 }
 
 /* ---------- signature spiral mark ---------- */
@@ -223,7 +224,7 @@ h1,h2,h3,p{ margin: 0; }
   top: 0;
   z-index: 60;
   padding-block: 18px;
-  background: linear-gradient(180deg, rgba(5,9,15,.4), transparent);
+  background: transparent;
 }
 .header-row{
   display: flex;
@@ -240,31 +241,6 @@ h1,h2,h3,p{ margin: 0; }
 .brand-logo{ height: 32px; width: auto; display: block; }
 .header-cta{ white-space: nowrap; }
 
-.sticky-cta{
-  position: fixed;
-  left: 0; right: 0; top: 0;
-  z-index: 55;
-  background: var(--navy-900);
-  border-bottom: 1px solid var(--line);
-  transform: translateY(-100%);
-  transition: transform .5s var(--ease);
-}
-.sticky-cta.is-visible{ transform: translateY(0); }
-.sticky-cta__row{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding-block: 10px;
-}
-.sticky-cta__text{
-  font-size: .85rem;
-  color: var(--ink-400);
-}
-@media (max-width: 640px){
-  .sticky-cta__text{ display: none; }
-  .sticky-cta__row{ justify-content: center; }
-}
 
 /* ---------- media / skeleton loading ---------- */
 .media{

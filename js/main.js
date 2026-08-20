@@ -139,15 +139,4 @@
     gsap.set([".site-header", ".hero .eyebrow", ".hero__title", ".hero__lede", ".hero__text", ".hero__content .btn"], { autoAlpha: 1, y: 0 });
     gsap.set(".hero__photo-wrap", { autoAlpha: 1, scale: 1 });
   }
-
-  /* ---------------- sticky CTA ---------------- */
-  var stickyCta = document.getElementById("sticky-cta");
-  if (stickyCta) {
-    ScrollTrigger.create({
-      trigger: "#topo",
-      start: "bottom top",
-      onEnter: function () { stickyCta.classList.add("is-visible"); },
-      onLeaveBack: function () { stickyCta.classList.remove("is-visible"); },
-    });
-  }
 })();
