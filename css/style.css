@@ -128,6 +128,7 @@ h1,h2,h3,p{ margin: 0; }
   color: var(--ink-400);
   max-width: 62ch;
   margin-bottom: 28px;
+  text-wrap: pretty;
 }
 .section-closing{
   font-family: var(--f-display);
@@ -327,12 +328,14 @@ h1,h2,h3,p{ margin: 0; }
   font-size: clamp(1.05rem, 1rem + .4vw, 1.3rem);
   color: var(--ink-100);
   margin-bottom: 16px;
+  text-wrap: pretty;
 }
 .hero__lede strong{ color: var(--gold-300); font-weight: 700; }
 .hero__text{
   color: var(--ink-400);
   max-width: 54ch;
   margin-bottom: 34px;
+  text-wrap: pretty;
 }
 .hero__stats{
   position: relative;
