@@ -222,8 +222,7 @@ h1,h2,h3,p{ margin: 0; }
   top: 0;
   z-index: 60;
   padding-block: 18px;
-  background: linear-gradient(180deg, rgba(5,9,15,.92), rgba(5,9,15,.55) 80%, transparent);
-  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(5,9,15,.4), transparent);
 }
 .header-row{
   display: flex;
