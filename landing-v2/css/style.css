@@ -684,13 +684,20 @@ h1,h2,h3,p{ margin: 0; }
 .check-list strong{ color: var(--ink-100); font-size: var(--fs-body); }
 .check-list span{ color: var(--ink-400); font-size: var(--fs-body); }
 
-/* dobra 04 — what Vórtice is not: a quiet dash instead of the gold check-dot */
+/* dobra 04 — what Vórtice is not: a quiet × instead of the gold check-dot */
 .check-list--not li::before{
-  width: 14px;
-  height: 2px;
-  top: 11px;
+  content: "\00d7";
+  width: auto;
+  height: auto;
+  top: -3px;
+  left: 1px;
+  background: none;
   border-radius: 0;
-  background: var(--ink-500);
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink-500);
 }
 .check-list--not li strong{ color: var(--ink-400); font-weight: 500; }
 .check-list--not{ margin-block: 32px 40px; }
