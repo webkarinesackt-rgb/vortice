@@ -351,7 +351,7 @@ h1,h2,h3,p{ margin: 0; }
   margin-bottom: 32px;
 }
 .hero__badge{
-  font-size: .82rem;
+  font-size: var(--fs-tag);
   font-weight: 600;
   color: var(--gold-300);
   border: 1px solid var(--line);
@@ -361,7 +361,7 @@ h1,h2,h3,p{ margin: 0; }
 }
 .hero__note{
   margin-top: 14px;
-  font-size: .82rem;
+  font-size: var(--fs-tag);
   color: var(--ink-500);
 }
 
@@ -525,7 +525,7 @@ h1,h2,h3,p{ margin: 0; }
 @media (max-width: 560px){
   .steps{ padding-left: 56px; }
   .steps::before{ left: 17px; }
-  .step__num{ left: -56px; width: 36px; font-size: 1.4rem; }
+  .step__num{ left: -56px; width: 36px; font-size: var(--fs-h3); }
 }
 
 .section-title--center{ margin-inline: auto; text-align: center; }
@@ -681,8 +681,8 @@ h1,h2,h3,p{ margin: 0; }
   border-radius: 50%;
   background: var(--gold-500);
 }
-.check-list strong{ color: var(--ink-100); font-size: 1rem; }
-.check-list span{ color: var(--ink-400); font-size: .92rem; }
+.check-list strong{ color: var(--ink-100); font-size: var(--fs-body); }
+.check-list span{ color: var(--ink-400); font-size: var(--fs-body); }
 
 /* dobra 04 — what Vórtice is not: a quiet dash instead of the gold check-dot */
 .check-list--not li::before{
@@ -723,7 +723,7 @@ h1,h2,h3,p{ margin: 0; }
   justify-content: center;
   gap: 18px;
   margin-top: 20px;
-  font-size: .78rem;
+  font-size: var(--fs-tag);
   color: var(--ink-400);
 }
 .dial-card__legend span{ display: flex; align-items: center; gap: 6px; }
@@ -731,7 +731,7 @@ h1,h2,h3,p{ margin: 0; }
 .dot--1{ background: var(--gold-500); }
 .dot--2{ background: var(--gold-300); }
 .dot--3{ background: var(--ink-100); }
-.metodo-visual__caption{ font-size: .78rem; color: var(--ink-500); text-align: center; max-width: 30ch; }
+.metodo-visual__caption{ font-size: var(--fs-tag); color: var(--ink-500); text-align: center; max-width: 30ch; }
 
 @media (max-width: 860px){
   .metodo-grid{ grid-template-columns: 1fr; }
@@ -746,7 +746,7 @@ h1,h2,h3,p{ margin: 0; }
   gap: 12px;
   padding-block: 12px;
   border-bottom: 1px dashed var(--line-soft);
-  font-size: .98rem;
+  font-size: var(--fs-body);
 }
 .price-ledger li span{ color: var(--ink-400); white-space: nowrap; }
 .price-ledger li span::after{
@@ -809,7 +809,7 @@ h1,h2,h3,p{ margin: 0; }
 
 .metodo-copy__closing{
   color: var(--ink-500);
-  font-size: .92rem;
+  font-size: var(--fs-body);
   line-height: 1.6;
   margin-block: 24px 28px;
   text-wrap: pretty;
@@ -824,7 +824,7 @@ h1,h2,h3,p{ margin: 0; }
   gap: var(--gap);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: 24px;
+  scroll-padding-inline: var(--wrap-pad-x);
   padding-bottom: 8px;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
@@ -896,7 +896,7 @@ h1,h2,h3,p{ margin: 0; }
   display: flex;
   align-items: baseline;
   gap: 16px;
-  font-size: .96rem;
+  font-size: var(--fs-body);
   color: var(--ink-100);
 }
 .credential-list li span{
@@ -938,7 +938,7 @@ h1,h2,h3,p{ margin: 0; }
   padding: 20px 24px;
   font-family: var(--f-body);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: var(--ink-100);
 }
 .faq-item summary::-webkit-details-marker{ display: none; }
@@ -957,7 +957,7 @@ h1,h2,h3,p{ margin: 0; }
   margin: 0;
   padding: 0 24px 22px;
   color: var(--ink-400);
-  font-size: .94rem;
+  font-size: var(--fs-body);
   line-height: 1.6;
 }
 
@@ -1003,7 +1003,7 @@ h1,h2,h3,p{ margin: 0; }
   margin-bottom: 18px;
 }
 .cta-final__text{ color: var(--ink-400); max-width: 52ch; margin-bottom: 30px; }
-.cta-final__note{ margin-top: 14px; font-size: .76rem; color: var(--ink-500); }
+.cta-final__note{ margin-top: 14px; font-size: var(--fs-tag); color: var(--ink-500); }
 
 /* ---------- footer ---------- */
 .site-footer{ padding-block: 40px; border-top: 1px solid var(--line-soft); }
@@ -1014,7 +1014,7 @@ h1,h2,h3,p{ margin: 0; }
   gap: 16px;
   flex-wrap: wrap;
 }
-.footer-legal{ font-size: .8rem; color: var(--ink-500); }
+.footer-legal{ font-size: var(--fs-tag); color: var(--ink-500); }
 
 /* ---------- scroll-reveal base state (JS adds .is-visible via GSAP or fallback) ---------- */
 [data-reveal], [data-reveal-lines], [data-reveal-root] [data-reveal]{
