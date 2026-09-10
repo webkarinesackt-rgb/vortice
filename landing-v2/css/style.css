@@ -407,11 +407,6 @@ h1,h2,h3,p{ margin: 0; }
 .section-chevron svg{ width: 100%; height: 100%; display: block; }
 .section-chevron--flip{ transform: scaleY(-1); }
 
-/* ---------- dobra 02 — persona cards (reuses .feature-card) ---------- */
-.feature-grid--persona{ grid-template-columns: repeat(2, 1fr); }
-@media (max-width: 620px){
-  .feature-grid--persona{ grid-template-columns: 1fr; }
-}
 
 /* ---------- dobra 03 — numbered process (a real sequence, so numerals earn their place) ---------- */
 .steps{
@@ -522,6 +517,12 @@ h1,h2,h3,p{ margin: 0; }
 }
 @media (max-width: 620px){
   .feature-grid{ grid-template-columns: 1fr; }
+}
+
+/* dobra 02 — persona cards: 4 items, so 2 columns (never an odd one out) */
+.feature-grid--persona{ grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 620px){
+  .feature-grid--persona{ grid-template-columns: 1fr; }
 }
 
 .bonus-frame{
