@@ -621,7 +621,8 @@ h1,h2,h3,p{ margin: 0; }
   background: var(--ink-500);
 }
 .check-list--not li strong{ color: var(--ink-400); font-weight: 500; }
-.check-list--not{ margin-block: 28px 8px; }
+.check-list--not{ margin-block: 32px 40px; }
+#nao-e{ padding-block: 72px; }
 
 .metodo-visual{ display: flex; flex-direction: column; align-items: center; gap: 18px; }
 .dial-card{
