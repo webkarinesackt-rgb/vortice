@@ -586,7 +586,7 @@ h1,h2,h3,p{ margin: 0; }
   .bonus-grid{ grid-template-columns: 1fr; }
 }
 
-/* ---------- dobra 04 — método / tutory ---------- */
+/* ---------- dobra 05 — acompanhamento ---------- */
 .metodo-grid{
   display: grid;
   grid-template-columns: 1.1fr .9fr;
