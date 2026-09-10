@@ -397,6 +397,41 @@ h1,h2,h3,p{ margin: 0; }
   border-image: linear-gradient(to right, transparent, rgba(200,164,69,.45), transparent) 1;
 }
 
+/* small arrow marker sitting on the hairline at most seams, so the page
+   reads as a continuous flow with a recurring detail instead of stacked
+   blocks — the bold chevron below stays reserved for one bigger moment */
+.divider-mark{ position: relative; height: 0; }
+.divider-mark__badge{
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--navy-900);
+  border: 1px solid rgba(200,164,69,.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.divider-mark__badge svg{ width: 12px; height: 7px; }
+
+/* a diagonal gold band crossing one seam, a third divider flavor for variety */
+.divider-band{ position: relative; height: 0; overflow: visible; z-index: 2; }
+.divider-band::before{
+  content: "";
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  top: -2px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 4%, var(--gold-700) 18%, var(--gold-300) 50%, var(--gold-700) 82%, transparent 96%);
+  transform: rotate(-1deg);
+  box-shadow: 0 0 16px 0 rgba(200,164,69,.35);
+}
+
 /* bolder angular divider reserved for one or two key moments (not every seam) */
 .section-chevron{
   display: block;
